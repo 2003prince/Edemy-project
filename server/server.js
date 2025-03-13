@@ -19,7 +19,7 @@ await connectCloudinay();
 
 
 // middleware
-app.use(cors());
+app.use(cors({ origin: "http://localhost:5173" }));
 app.use(clerkMiddleware())
 
 
